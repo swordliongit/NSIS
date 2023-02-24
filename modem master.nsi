@@ -1,9 +1,9 @@
 ; Define the name and version of your installer
-Name "Modem Master Odoo v1.1.2 Installer"
-OutFile "ModemMasterOdoo_v1.1.2_Installer.exe"
+Name "Master Modem Odoo v1.3.2 Installer"
+OutFile "Master Modem Odoo v1.3.2 Setup.exe"
 
 ; Specify the folder where the files should be installed
-InstallDir "$PROGRAMFILES\Modem Master Odoo v1.1.2"
+InstallDir "$PROGRAMFILES\Master Modem Odoo v1.3.2\"
 
 ; Specify the actions that should be performed during the installation process
 Section "Installation"
@@ -12,11 +12,10 @@ Section "Installation"
     ExecWait "$EXEDIR\npcap-1.72.exe"
 
     ; Copy the whole "Modem Master Odoo v1.1.2" folder to the installation directory
-    ;File "modem_master_odoo_v1.1.2\*"
     SetOutPath "$INSTDIR"
-    File /r "modem_master_odoo_v1.1.2\"
+    File /r "Master Modem Odoo v1.3.2\"
 
     ; Create a shortcut for the main exe in the desktop
-    CreateShortCut "$DESKTOP\Modem Master Odoo.lnk" "$INSTDIR\Modem Master Odoo.exe"
+    CreateShortCut "$DESKTOP\Master Modem Odoo.lnk" "$INSTDIR\Master Modem Odoo\Master Modem Odoo.exe"
 
 SectionEnd
